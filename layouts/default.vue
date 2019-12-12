@@ -103,7 +103,7 @@
         <div class="column column50">
           &copy; 2019 SUKO.AL. TE GJITHA TE DREJTAT E REZERVUARA.
         </div>
-        <div class="column column50" style="float:right;">
+        <div class="column" style="float:right;">
           <img src="@/static/logo.png">
         </div>
       </div>
