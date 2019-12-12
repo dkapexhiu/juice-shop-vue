@@ -196,7 +196,7 @@ section.content {
 .footer {
   grid-area: footer;
   text-align: left;
-  padding: 1em;
+  padding: 2em;
   border-top: 1px solid #ddd;
   color: white;
   bottom: 0;
