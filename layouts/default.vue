@@ -70,13 +70,13 @@
         <div class="column">
           <h2>NA KONTAKTONI</h2>
           <div class="footer-bottom-color border1"/>
-          <p>Ne duam te marrim feedback nga klientet tane. Na shkruani per ndonje pyetje ose na lini koment.</p>
-          <a href="mailto:info@suko.al"><img src="@/static/icons/mail.png"> info@suko.al</a>
-        </div>
+          <p class="footer-widgets">Ne duam te marrim feedback nga klientet tane. Na shkruani per ndonje pyetje ose na lini koment.<br>
+          <a href="mailto:info@suko.al"><img src="@/static/icons/mail.png"> info@suko.al</a></p>
+        </div></p>
         <div class="column">
           <h2>FOLLOW US</h2>
           <div class="footer-bottom-color border2"/>
-          <div id="social">
+          <div id="social" class="footer-widgets">
             <a href="https://www.facebook.com/Suko-Organic-533536777053484/"><img src="@/static/icons/facebook.png"> Facebook</a>
             <a href="https://www.instagram.com/suko_organic/"><img src="@/static/icons/insta.jpg" style="height:15px;"> Instagram</a>
             <a href="https://www.snapchat.com/add/suko_organic"><img src="@/static/icons/snap.png" style="height:15px;"> Snapchat</a>
@@ -85,7 +85,7 @@
         <div class="column">
           <h2>MENU</h2>
           <div class="footer-bottom-color border3"/>
-          <div id="menu">
+          <div id="menu" class="footer-widgets">
             <a href="//suko.al/menu.html">Menu</a>
             <a href="//suko.al/rrethnesh.html">Rreth Nesh</a>
             <a href="//suko.al/franchise.html">Franchise</a>
@@ -95,7 +95,7 @@
         </div>
         <div class="column">
           <h2>FRANCHISE</h2>
-          <div class="footer-bottom-color border4"/>
+          <div class="footer-bottom-color border4 footer-widgets" />
           <p>Mundësitë e bashkepunimit tani janë të disponueshme në zonën tuaj. Bashkohuni sot me levizjen tone. <a href="//suko.al/franchise.html">Lexo me teper</a></p>
         </div>
       </div>
@@ -138,6 +138,10 @@ export default {
 </script>
 
 <style scoped>
+.footer-widgets {
+  line-height: 24px;
+}
+
 @media only screen and (min-width: 500px) {
   .root {
     display: content;
