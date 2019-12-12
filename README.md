@@ -1,11 +1,6 @@
-# The Transglobal Candy Store
+# Suko Shop Frontend Store
 
-A frontend example in Vue.js and Nuxt.js for the Sanity.io e-commerce schema
-
-🔗 [Read the blog post](https://www.sanity.io/blog/e-commerce-vue-nuxt-snipcart)
-
-![Short animated preview of the app](https://public.sanity.io/github-assets/snipcart-for-github.gif "Logo Title Text 1")
-
+Suko shop frontend written in Vue.js
 
 ## Quickstart on local
 
