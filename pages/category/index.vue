@@ -14,12 +14,27 @@
             :to="'/category/' + category.slug.current"
           >
             {{ category.title }}
-          </router-link>
+            <SanityImage
+              v-if="category.logo"
+              :image="category.logo"
+              class="image"
+            />  
+          </router-link>       
         </li>
       </ul>
     </div>
   </section>
 </template>
+
+<script>
+import SanityImage from "~/components/SanityImage"
+
+export default {
+  components: {
+    SanityImage
+  }
+}
+</script>
 
 <style scoped>
 ul {
@@ -48,5 +63,12 @@ a {
   a {
     font-size: 2em;
   }
+}
+
+.image {
+  display: block;
+  max-height: 5em;
+  max-width: 10em;
+  margin: 0 auto;
 }
 </style>

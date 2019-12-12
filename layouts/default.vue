@@ -54,7 +54,12 @@
             >
               <router-link :to="'/category/' + subCategory.slug.current">
                 {{ subCategory.title }}
-              </router-link>
+                <SanityImage
+                  v-if="category.logo"
+                  :image="category.logo"
+                  class="image"
+                />
+              </router-link>               
             </li>
           </ul>
         </li>
@@ -70,13 +75,13 @@
         <div class="column">
           <h2>NA KONTAKTONI</h2>
           <div class="footer-bottom-color border1"/>
-          <p class="footer-widgets">Ne duam te marrim feedback nga klientet tane. Na shkruani per ndonje pyetje ose na lini koment.<br>
-          <a href="mailto:info@suko.al"><img src="@/static/icons/mail.png"> info@suko.al</a></p>
-        </div></p>
+          <p>Ne duam te marrim feedback nga klientet tane. Na shkruani per ndonje pyetje ose na lini koment.</p>
+          <a href="mailto:info@suko.al"><img src="@/static/icons/mail.png"> info@suko.al</a>
+        </div>
         <div class="column">
           <h2>FOLLOW US</h2>
           <div class="footer-bottom-color border2"/>
-          <div id="social" class="footer-widgets">
+          <div id="social">
             <a href="https://www.facebook.com/Suko-Organic-533536777053484/"><img src="@/static/icons/facebook.png"> Facebook</a>
             <a href="https://www.instagram.com/suko_organic/"><img src="@/static/icons/insta.jpg" style="height:15px;"> Instagram</a>
             <a href="https://www.snapchat.com/add/suko_organic"><img src="@/static/icons/snap.png" style="height:15px;"> Snapchat</a>
@@ -85,7 +90,7 @@
         <div class="column">
           <h2>MENU</h2>
           <div class="footer-bottom-color border3"/>
-          <div id="menu" class="footer-widgets">
+          <div id="menu">
             <a href="//suko.al/menu.html">Menu</a>
             <a href="//suko.al/rrethnesh.html">Rreth Nesh</a>
             <a href="//suko.al/franchise.html">Franchise</a>
@@ -95,13 +100,13 @@
         </div>
         <div class="column">
           <h2>FRANCHISE</h2>
-          <div class="footer-bottom-color border4 footer-widgets" />
+          <div class="footer-bottom-color border4"/>
           <p>Mundësitë e bashkepunimit tani janë të disponueshme në zonën tuaj. Bashkohuni sot me levizjen tone. <a href="//suko.al/franchise.html">Lexo me teper</a></p>
         </div>
       </div>
       <div class="row">
-        <div class="column column50">
-          &copy; 2019 SUKO.AL. TE GJITHA TE DREJTAT E REZERVUARA.
+        <div class="column">
+          &copy; 2019. Te gjitha te drejtat e rezervuara.
         </div>
         <div class="column" style="float:right;">
           <img src="@/static/logo.png">
@@ -113,10 +118,12 @@
 
 <script>
 import AppLogo from "~/components/AppLogo.vue"
+import SanityImage from "~/components/SanityImage"
 
 export default {
   components: {
-    AppLogo
+    AppLogo,
+    SanityImage
   },
   mounted() {
     if (!window.Snipcart) {
@@ -138,10 +145,6 @@ export default {
 </script>
 
 <style scoped>
-.footer-widgets {
-  line-height: 24px;
-}
-
 @media only screen and (min-width: 500px) {
   .root {
     display: content;
@@ -200,7 +203,7 @@ section.content {
 .footer {
   grid-area: footer;
   text-align: left;
-  padding: 2em;
+  padding: 1em;
   border-top: 1px solid #ddd;
   color: white;
   bottom: 0;
@@ -512,9 +515,5 @@ a {
   .header .menu-icon {
     display: none;
   }
-}
-
-.column50 {
-  width: 50%!important;
 }
 </style>

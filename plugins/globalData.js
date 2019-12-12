@@ -24,6 +24,7 @@ const query = `
       _id,
       title,
       slug,
+      logo,
       parents
     },
     "vendors": *[_type == "vendor"] {
