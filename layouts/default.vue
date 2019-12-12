@@ -101,7 +101,7 @@
       </div>
       <div class="row">
         <div class="column">
-          &copy; 2019. Te gjitha te drejtat e rezervuara.
+          &copy; 2019 SUKO.AL. TE GJITHA TE DREJTAT E REZERVUARA.
         </div>
         <div class="column" style="float:right;">
           <img src="@/static/logo.png">
