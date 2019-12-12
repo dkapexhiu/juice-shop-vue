@@ -1,0 +1,101 @@
+h1.title {
+  font-family: fredokaoneregular, "Quicksand", "Source Sans Pro", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif; /* 1 */
+  display: block;
+  font-weight: 500;
+  letter-spacing: -0.04em;
+  font-size: 3em;
+  line-height: 1em;
+  color: #fd8204;
+  text-transform: uppercase;
+}
+
+@media only screen and (min-width: 500px)  {
+  h1.title {
+    font-size: 4em;
+    text-align: center;
+  }
+}
+
+h2.subtitle {
+  font-weight: 300;
+  font-size: 2em;
+  word-spacing: 5px;
+  padding-bottom: 40px;
+}
+
+.row h2 {
+  font-family: "Poppins";
+}
+
+@media only screen and (min-width: 500px)  {
+  h2.subtitle {
+    font-size: 3em;
+  }
+}
+
+a {
+  color: inherit;
+}
+
+a:active {
+  color: #3987d9;
+}
+
+button {
+  border: none;
+  display: inline-block;
+  appearance: none;
+  color: #000;
+  background-color: rgb(247,170,82);
+  padding: 0.25em 0.5em;
+  margin: 0 0.25em;
+  outline: none;
+  border-radius: 10px;
+}
+
+button:active {
+  background-color: #000;
+  color: #fff;
+}
+
+@font-face {
+  font-family: fredokaoneregular;
+  src: url(/fonts/FredokaOne-Regular.otf) format("opentype");
+}
+
+@font-face {
+  font-family: bebasneuebold;
+  src: url(/fonts/BebasNeue-Bold.otf) format("opentype");
+}
+
+@import url('https://fonts.googleapis.com/css?family=Poppins&display=swap');
+
+.border-bottom-color {
+  height: 4px;
+  background: #bcc31b;
+  width: 35%;
+  margin: 0 auto;
+  margin-bottom: 15px;
+}
+
+.footer-bottom-color {
+  height: 4px;
+  width: 35%;
+  margin-bottom: 15px;
+}
+
+.border1 {
+  background: #e5447c;
+}
+
+.border2 {
+  background: #91ad41;
+}
+
+.border3 {
+  background: #fd8204;
+}
+
+.border4 {
+  background: rgb(52,102,102);
+}
