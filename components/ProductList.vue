@@ -253,7 +253,7 @@ ul {
 }
 
 @media all and (max-width: 600px) {
-  .grid[data-v-0feaa5a2] {
+  .grid {
     grid-template-columns: repeat(2, 1fr) !important;
   }
 }
