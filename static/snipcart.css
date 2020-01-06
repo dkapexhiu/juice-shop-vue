@@ -1440,3 +1440,15 @@ body.snip-open {
 #province {
   display: none;
 }
+
+#city {
+    display: none;
+}
+
+#country {
+    display: none;
+}
+
+#snip-col-2 {
+    display: none;
+}
