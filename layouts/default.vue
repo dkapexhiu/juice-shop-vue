@@ -1,5 +1,5 @@
 <template>
-  <div class="root">
+  <div class="root" >
     <header id="headerDesktop">
       <div id="headerInner">
         <router-link :to="'//suko.al/'" class="logo">

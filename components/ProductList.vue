@@ -25,9 +25,10 @@
             :data-item-name="product.title"
             :data-item-price="product.defaultProductVariant.price"
             :data-item-id="product._id"
+            :data-item-url="/product/ + product.title"
             type="button"
             class="snipcart-add-item"
-            data-item-url="/"
+            
           >
             Shto ne Shporte
           </button>
@@ -253,7 +254,7 @@ ul {
 }
 
 @media all and (max-width: 600px) {
-  .grid {
+  .grid[data-v-0feaa5a2] {
     grid-template-columns: repeat(2, 1fr) !important;
   }
 }
