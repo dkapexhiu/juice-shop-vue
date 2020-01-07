@@ -370,7 +370,7 @@ html {
     display: none !important;
   }
   #headerMobile {
-    display: block !important;
+    display: inline-flex !important;
   }
   .header .logo {
     font-size: 2em !important;
