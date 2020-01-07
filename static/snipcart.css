@@ -1452,3 +1452,7 @@ body.snip-open {
 #snip-col-2 {
     display: none;
 }
+
+#snipcart-payment-method-step{
+    display: none;
+}

@@ -40,6 +40,9 @@ export default {
         // Change me. Read more at http://snipcart.com
         "data-api-key":
           "YTcwOWVjMjEtYmE0OS00ZDkzLWI2OWMtMDI5ZjBjODdhMjEzNjM3MTEzMDc3MzgyNDAxMjg0"
+      }, 
+      {
+        src: "/custom.js"
       }
     ]
   },
