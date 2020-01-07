@@ -26,7 +26,16 @@
     <header id="headerMobile" class="header" style="display: none;">
       <router-link :to="'//suko.al/'" class="logo">
         <AppLogo />
-      </router-link>	  
+      </router-link>	 
+        <div ref="cart" class="cart">
+          <a href="#" class="snipcart-checkout">
+            <div class="snipcart-summary">
+              🛒
+              <span class="snipcart-total-items" /> produkt(e)
+              <span class="snipcart-total-price" />
+            </div>
+          </a>
+        </div>
       <input id="menu-btn" class="menu-btn" type="checkbox" >
       <label class="menu-icon" for="menu-btn"><span class="navicon"/></label>
       <ul class="menu">
