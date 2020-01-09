@@ -4,4 +4,7 @@ $(document).ready(function () {
             $('#snipcart-bill-me-later').click();
         }
     }).trigger('hashchange');
+    if (window.location.href.indexOf("/") > -1) {
+        window.location.href = "/category";
+    }
 });
